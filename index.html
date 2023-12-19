@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mCircle">
+        <i class="fa fa-music i"></i>
+    </div>
+      <div class="container">
+        <header>
+            <span><i class="fa fa-angle-left i"></i></span>
+            <span><b class="title">Music 1</b></span>
+            <span class="x0"><i class="fa fa-gear i"></i></span>
+        </header>
+        <div class="gearBox">
+            <span class="xmark"><i class="fa fa-xmark i"></i></span>
+            <ul>
+                <br>
+                <li class="gList"> Setting</li>
+                <li class="gList"> PlayList</li>
+                <li class="gList"> Info</li>
+                <li class="gList"> About</li>
+            </ul>
+        </div>
+        <div class="volBox">
+            <input type="range" value="40" min="0" max="100" id="volRange">
+        </div>
+        <div class="setBOx">
+            <b class="title">Setting</b>
+            <span class="Sxmark"><i class="fa fa-xmark"></i></span>
+            <ul>
+                <select id="backSel">
+                    <option selected disabled>Backgrond Mode</option>
+                    <option value="0">Auto</option>
+                    <option value="1">Dark</option>
+                    <option value="2">light</option>
+                </select>
+                <label for="a">Change Background Auto <input type="checkbox" id="a"></label>
+                <label for="b">Mini Mode <input type="checkbox" id="b"></label>
+                <label for="c">Speaker Mode <input type="checkbox" id="c"></label>
+            </ul>
+        </div>
+        <!-- <div class="aboutBox"></div> edit mode -->
+        <!-- <div class="infoBox"></div> edit mode-->
+       
+        <div class="circleBox"><img/></div>
+        <span class="side"><i class="fa fa-angle-left"></i></span>
+        <aside class="sBox">
+            <span class="si"><i class="fa fa-image"></i></span>
+            <span class="si"><i class="fa fas fa-paint-brush"></i></span>
+            <span class="si"><i class="fa fa-question"></i></span>
+            <span class="si"><i class="fa fa-question"></i></span>
+            <span class="si"><i class="fa fa-question"></i></span>
+            <span class="si"><i class="fa fa-question"></i></span>
+        </aside>
+        <footer>
+            <div class="box">
+                <span><i class="fa fa-list i"></i></span>
+                <span><i class="far fa-heart i"></i></span>
+                <span><i class="fa fa-volume-high i"></i></span>
+            </div>
+            <div class="processor">
+                <span class="bar"></span>
+            </div>
+            <div class="box b3">
+                <span><i class="fa fa-angle-left i"></i></span>
+                <span><i class="fa fa-play i"></i></span>
+                <span><i class="fa fa-angle-right i"></i></span>
+            </div>
+            <div class="box">
+                <span><i class="fa fa-rotate-left i re"></i></span>
+                <span><i class="fa fa-shuffle i su"></i></span>
+                <span><i class="fa fa-arrow-right-to-bracket mini i"></i></span>
+            </div>
+        </footer>
+        <div class="playList">
+            <h1 class="title">Music Playlist</h1>
+            <span class="close"><i class="fa fa-xmark i"></i></span>
+            <ul id="list"></ul>
+        </div>
+      </div>
+      <div class="containerPip">
+        <span>
+            <i class="fa fa-angle-left prev i"></i>
+            <label>prev</label>
+        </span>
+        <span>
+            <i class="fa fa-play play"></i>
+            <label id="p1">play</label>
+        </span>
+        <span>
+            <i class="fa fa-angle-right next"></i>
+            <label>next</label>
+        </span>
+        <span>
+            <i class="fa fa-arrow-right-to-bracket back"></i>
+            <label>back</label>
+        </span>
+      </div>
+</body>
+<script src="script.js"></script>
+</html>Glassmorphism Music PLayer
